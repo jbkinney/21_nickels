@@ -1,0 +1,15 @@
+ 
+reading grouped_template file ...
+template has 598,290 rows
+template has ['pe' 'bc' 'count_template'] columns
+ 
+ 
+reading grouped_CP51 file ...
+CP51 has 4,341,440 rows
+CP51 has ['umi' 'bc' 'var_length'] columns
+ 
+Merge template and CP51 on bc ...
+ 
+number of (umi, bc, pe) for CP51 merged with template are 3,302,053
+ 
+writing the CP51_template_merge.csv.gz ...

@@ -1,0 +1,10 @@
+ 
+reading xlink raw for CP53 ...
+CP53 has 30,652,744 reads
+CP53 has ['sample' 'umi' 'var'] columns
+Dropping UMI contains N
+Calculate the var_length
+Counting unique var and umi in CP53 ...
+Number of var seq with var_len=14 for CP53 is 102
+
+saving the var_length=14 for CP53 in xlink_data

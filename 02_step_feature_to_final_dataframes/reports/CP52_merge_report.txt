@@ -1,0 +1,15 @@
+ 
+reading grouped_template file ...
+template has 598,290 rows
+template has ['pe' 'bc' 'count_template'] columns
+ 
+ 
+reading grouped_CP52 file ...
+CP52 has 3,258,768 rows
+CP52 has ['umi' 'bc' 'var' 'var_length'] columns
+ 
+Merge template and CP52 on bc ...
+ 
+number of (umi, bc, pe) for CP52 merged with template are 2,593,693
+ 
+writing the CP52_template_merge.csv.gz ...

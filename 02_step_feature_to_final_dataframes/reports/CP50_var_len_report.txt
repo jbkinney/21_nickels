@@ -1,0 +1,10 @@
+ 
+reading xlink raw for CP50 ...
+CP50 has 28,625,122 reads
+CP50 has ['sample' 'umi' 'var'] columns
+Dropping UMI contains N
+Calculate the var_length
+Counting unique var and umi in CP50 ...
+Number of var seq with var_len=14 for CP50 is 160
+
+saving the var_length=14 for CP50 in xlink_data

@@ -1,0 +1,15 @@
+ 
+reading grouped_template file ...
+template has 598,290 rows
+template has ['pe' 'bc' 'count_template'] columns
+ 
+ 
+reading grouped_CP54 file ...
+CP54 has 6,807,141 rows
+CP54 has ['umi' 'bc' 'var' 'var_length'] columns
+ 
+Merge template and CP54 on bc ...
+ 
+number of (umi, bc, pe) for CP54 merged with template are 5,840,167
+ 
+writing the CP54_template_merge.csv.gz ...

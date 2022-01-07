@@ -1,0 +1,16 @@
+ 
+reading CP49 file ...
+CP49 has 13,629,448 reads
+CP49 has ['sample' 'bc' 'umi' 'var' 'var_length'] columns
+Dropping BC and UMI contains N
+Counting unique bc and umi in CP49 ...
+Number of unique bc in CP49 are 823,607
+Number of unique umi in CP49 are 726,179
+
+Grouping umi and bc for CP49 sample with highest modes ...
+Get rid of rows with two vars sequences ...
+ 
+Get rid of two var lengths rows ...
+ 
+Number of unique (umi, bc) pairs in CP49 is 2,860,138
+saving the (umi, bc) grouped for CP49 in grouped_filter_data folder

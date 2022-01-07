@@ -1,0 +1,15 @@
+ 
+reading template file ...
+template has 16,837,854 reads
+template has ['sample' 'bc' 'pe' 'var_length'] columns
+Dropping BC and UMI contains N
+Counting unique bc and pe in template ... 
+Number of unique bc in template are 1,658,460
+Number of unique pe in template are 16,384
+
+Grouping bc and pe in template file ...
+Number of unique (bc,pe) pairs in grouped template is 3,165,490
+
+Filtering template to have at least 5 (bc, pe) counts ...
+Number of unique (bc,pe) pairs in filtered template is 598,290
+saving the filtered template in grouped_filter_data folder
