@@ -5,11 +5,11 @@ Scripts provided here are for the **second step** in our overall pipeline to get
 
 **Structural and mechanistic basis of σ-dependent transcriptional pausing**
 
-Scripts for first and third (final) steps are provided in the root directory.
+Scripts for the first and third (final) steps are provided in the root directory.
 
-Note that, due to the size of intermediate files, we are not providing them here.However, the structure of the directory (including empty folders) are given for clarity.
+Note that, due to the size of intermediate files, we are not providing them here. However, the structure of the directory (including empty folders) are given for clarity.
 
-For ligation and crosslink biases correction we used the data from the following manuscript which we will refer in the following documentation as XACT-seq (2020):
+For ligation and crosslink biases correction we used the data from the following manuscript which we will refer it as XACT-seq (2020) in the following guideline.
 
 **Winkelman, Jared T., et al. "XACT-seq comprehensively defines the promoter-position and promoter-sequence determinants for initial-transcription pausing." Molecular cell 79.5 (2020): 797-811.**
 
@@ -25,23 +25,26 @@ The final outcome of this step which are provided in the git repository are:
 
 2. raw pause-element, A-site location dataframes in `./pe_aloc_pairs_data`.
 
-- `python group_filter_template.py -t template -m min_ct`
-- `python group_filter_samples.py  -s {sample_names}`. For `sample_names` in `{CP49, CP50, CP51, CP52, CP53, CP54}`
-- `python make_merge_files.py  -s {sample_name} -t {tamplate_name}`
-- `python count_pe_aloc_pairs.py -s {sample_names}`
+3. How to run all the script in this step:
 
-(note the following steps need `logomaker` Python package.)
-- `python make_template_weight.py`
-- `python make_rescaled_counts.py`
+    - `python group_filter_template.py -t template -m min_ct`
+    - `python group_filter_samples.py  -s {sample_names}`. For `sample_names` in `{CP49, CP50, CP51, CP52, CP53, CP54}`
+    - `python make_merge_files.py  -s {sample_name} -t {tamplate_name}`
+    - `python count_pe_aloc_pairs.py -s {sample_names}`
+
+    (note the following steps need `logomaker` Python package.)
+    - `python make_template_weight.py`
+    - `python make_rescaled_counts.py`
 
 
 ## fastq files to feature files
 
-`fastq` files for samples and templates are processed with in-house pipeline
-which is also provided in the root directory (first step: `fastq_to_features`).
-Outputs of the first step are **feature files**.
+`fastq` files for samples (each replicate) and the templates are processed with in-house pipeline
+which is also provided in the root directory (first step: `01-fastq_to_features`).
+Outputs of the first step are **feature files**, which will be explained below.
 
 ## From Feature files to grouped files
+
 Feature files are provided to this pipeline in `pipeline_data` folder.
 
 Content of the `./pipeline_data` folder:
