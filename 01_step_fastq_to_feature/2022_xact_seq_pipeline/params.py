@@ -10,7 +10,7 @@ import time
 
 # User options
 illumina_run_dir = '../fastq'
-metadata_file = './090821_xactseq.xlsx'
+metadata_file = './metadata.xlsx'
 tmp_dir = 'tmp'
 interm_dir = 'intermediate'
 reads_per_split = int(1E6)
