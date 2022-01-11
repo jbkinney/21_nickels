@@ -6,12 +6,13 @@ The computational pipeline used in this study was split into three steps.
 The first two steps run on the Elzar High Performance Computing Cluster at Cold Spring Harbor Laboratory (CSHL). 
 The third (final step) is used to plot sequence logos and count profiles presented in the manuscript main text and supplements. The detailed descriptions of the three steps mentioned bellow are in separate README files in each folder.
 
-## Step 1: [Processing the fastq files](./01_step_fastq_to_feature) 
+## Step 1: [Processing the fastq files](./01_step_fastq_to_feature)
+
 - The scripts for running this step are provided in `01_step_fastq_to_feature` [directory](./01_step_fastq_to_feature).
-- We explained how to run this step in the (README)[01_step_fastq_to_feature/README.md] file.
+- We explained how to run this step in the [README](./01_step_fastq_to_feature/README.md) file.
 - One need to download all sequencing data (fastq) files from SRA BioProject number **XXXXXX** and deposit into the
 `./01_step_fastq_to_feature/fastq` directory.
-- We provided the metadata file `01_step_fastq_to_feature/metadata.xlsx` in which the name of samples should match the fastq files.
+- We provided the metadata file [`metadata.xlsx`](01_step_fastq_to_feature/2022_xact_seq_pipeline/metadata.xlsx) in which the name of samples should match the fastq files.
 - We called the output of this step **feature** files which are needed for the Step 2. 
 
 ## Step 2: [Processing the feature files](./02_step_feature_to_final_dataframes) 
@@ -26,7 +27,9 @@ The third (final step) is used to plot sequence logos and count profiles present
     [Winkelman, Jared T., et al. "XACT-seq comprehensively defines the promoter-position and promoter-sequence determinants for initial-transcription pausing." Molecular cell 79.5 (2020): 797-811](https://doi.org/10.1016/j.molcel.2020.07.006). The dataframe which is used for ligation and cross-link corrections from XACT_seq (2020) is also provided in
     [xlink_lig_ave_xact_seq.csv.gz](./02_step_feature_to_final_dataframes/xact_seq_bias_data/xlink_lig_ave_xact_seq.csv.gz) for convenience.  
    
-## Step 3: [Making sequence logos and count profiles](./02_step_feature_to_final_dataframes) 
+## Step 3: [Making sequence logos and count profiles](./03_step_final_dataframe_to_logos)
+
+- The scripts for running this step are provided in `03_step_final_dataframe_to_logos` [directory](./03_step_final_dataframe_to_logos). 
 - The separate [README](03_step_final_dataframe_to_logos/README.md) file is provided for detailed description of this step.
 - The content of this folder is standalone and one should be easily able to reproduce all the sequence logos and count profiles.
 - The scripts in this step depend on popular scientific python packages like `numpy, pandas` and `matplotlib`. In addition, for sequence logos we used the Python package [logomaker](https://logomaker.readthedocs.io/en/latest/).
