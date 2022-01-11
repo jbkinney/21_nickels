@@ -1,6 +1,6 @@
 # Analysis code and summary data
 
-JBK COMMENTS: Readme.md is too vague. Need to be more precise. Language also needs polishing. 
+**JBK COMMENTS: TOO VAGUE. SAY SPECIFICALLY WHICH SCRIPTS DO WHAT. SEPARATE GENERAL COMMENTS FROM SPECIFIC INSTRUCTIONS. POLISH THIS README AS IF IT WERE BEING PUBLISHED.**
 
 **Structural and mechanistic basis of σ-dependent transcriptional pausing**
 
@@ -11,9 +11,9 @@ The computational pipeline used in this study was split into three steps:
     - This component run on the `Elzar` High Performance Computing Cluster at Cold Spring Harbor Laboratory (CSHL). 
 
     - Scripts provides in this directory was configured specifically for the `Elzar` cluster at CSHL, and will likely have to be modified before it is run on a different cluster. 
-    - To run this pipeline, first we need all `fastq` sequencing data and deposit them into the directory `/01_step_fastq_to_feature/fastq` directory. [WHERE DOES ONE GET THESE?]
-    - The name of the `fastq` files should be matched with the `01_step_fastq_to_feature/var_seq/090821_xactseq.xlsx` metadate file. [RENAME METADATA FILE TO BE LESS CRYPTIC]
-    - To run the pipeline one can execute `python run_pipeline.py var_seq`. [WHAT DOES VAR_SEQ STAND FOR? WHY IS IT NEEDED AS AN ARGUMENT?]
+    - To run this pipeline, first we need all `fastq` sequencing data and deposit them into the directory `/01_step_fastq_to_feature/fastq` directory. **WHERE DOES ONE GET THESE?**
+    - The name of the `fastq` files should be matched with the `01_step_fastq_to_feature/var_seq/090821_xactseq.xlsx` metadate file. **RENAME METADATA FILE TO BE LESS CRYPTIC**
+    - To run the pipeline one can execute `python run_pipeline.py var_seq`. **WHAT DOES VAR_SEQ STAND FOR? WHY IS IT NEEDED AS AN ARGUMENT?**
     - The output of this step is called `feature` files which are explained in details in the `Step 2`. 
 
 2. Step 2: `02_step_feature_to_final_dataframes`:
@@ -22,11 +22,11 @@ The computational pipeline used in this study was split into three steps:
 
     - We added the step-by-step guideline in the README file inside the directory.
 
-    - The input of this step are those `feature` files from Step 1. In addition, for ligation and cross-link bias correction one need to provide the appropriate data from analysis of the XACT_seq (2020) paper refereed below. For convenience, the dataframe used for bias correction from XACT_seq (2020) is provided. [WHICH FILE?]
+    - The input of this step are those `feature` files from Step 1. In addition, for ligation and cross-link bias correction one need to provide the appropriate data from analysis of the XACT_seq (2020) paper refereed below. For convenience, the dataframe used for bias correction from XACT_seq (2020) is provided. **WHICH FILE?**
     
     [Winkelman, Jared T., et al. "XACT-seq comprehensively defines the promoter-position and promoter-sequence determinants for initial-transcription pausing." Molecular cell 79.5 (2020): 797-811.](https://doi.org/10.1016/j.molcel.2020.07.006)
    
-    - Outputs of this step are [WHAT ARE THE FILE NAMES?]:
+    - Outputs of this step are **WHAT ARE THE FILE NAMES?**:
         - Template, ligation and crosslink bias corrected pause elements and A-site for each replicate.
         - Global sequence logos for each replicate.
         - Rescaled values for count after bias corrections for each replicates.
@@ -36,7 +36,7 @@ The computational pipeline used in this study was split into three steps:
 
  3. Step 3: `03_step_final_dataframe_to_logos`
  
-    - Scripts provided in this step plot logos for current experiments, as well as XACT_seq (2020) experiments. [WHAT ARE THE FILE NAMES? WHICH SCRIPTS DO WHAT?]
+    - Scripts provided in this step plot logos for current experiments, as well as XACT_seq (2020) experiments. **WHAT ARE THE FILE NAMES? WHICH SCRIPTS DO WHAT?**
     - The content of this folder is standalone and one should be easily reproduce all the sequence logos. 
     - Note that scripts depend on popular scientific python packages like `numpy, pandas` and `matplotlib`. In addition, for sequence logos we used the Python package [logomaker](https://logomaker.readthedocs.io/en/latest/)
     - Scripts are provided in the form of `jupyter-notebook`s.
