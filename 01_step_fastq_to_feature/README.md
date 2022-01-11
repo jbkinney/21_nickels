@@ -1,9 +1,7 @@
 # Processing the fastq files
 
 This folder includes the scripts for our in-house pipeline to process the raw fastq files from the sequencing machine for experiments conducted for the current manuscript.
-
-
-- Scripts provides in this directory were configured specifically for the Elzar cluster at CSHL, and will likely have to be modified before it is run on a different cluster. 
+Scripts provides in this directory were configured specifically for the Elzar cluster at CSHL, and will likely have to be modified before it is run on a different cluster. Outcomes of this step are called **features** which needed for the second step (see [2nd step](../02_step_feature_to_final_dataframes))
 
 ## Structure of the directory
 
@@ -17,10 +15,10 @@ This folder includes the scripts for our in-house pipeline to process the raw fa
 └── fastq
 ```
 
-- The core of the pipeline are located in `src` [directory](./01_step_fastq_to_feature/src). The content of this folder may not be modified, unless someone need to adopt submitting jobs to other clusters or need to add extra feature extraction.
-- The sequencing data (fastq) files from SRA BioProject number **XXXXXX** need to be downloaded and put in `fastq` [directory](./01_step_fastq_to_feature/fastq`).
+- The core of the pipeline are located in `src` [directory](../01_step_fastq_to_feature/src). The content of this folder may not be modified, unless someone need to adopt submitting jobs to other clusters or need to add extra feature extraction.
+- The sequencing data (fastq) files from SRA BioProject number **XXXXXX** need to be downloaded and put in `fastq` [directory](../01_step_fastq_to_feature/fastq`).
     - Since the size of fastq data are huge, they are not provided in this repository.
-- The pipeline input files are located in `2022_xact_seq_pipeline` [directory](01_step_fastq_to_feature/2022_xact_seq_pipeline). Contents of this folder are:
+- The pipeline input files are located in `2022_xact_seq_pipeline` [directory](../01_step_fastq_to_feature/2022_xact_seq_pipeline). Contents of this folder are:
     - `metadata.xlsx`: This file includes several sheets which point towards each samples fastq file and uses regular expressions to extract the features we are interested from the sequence files.
     - `params.py`: The user-input parameters file. In this file one needs to
         - provide the directory which fastq files are located. By default: `illumina_run_dir = '../fastq'`
