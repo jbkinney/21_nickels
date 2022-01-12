@@ -273,7 +273,7 @@ In this step we need to find the necessary corrections that needed to be apply f
 
 ## Ligation and Cross-link corrections from XACT-seq (2020)
 
-The similar computational pipeline has been used to analyse the XACT-seq (2020) experiments. The raw fastq files can be downloaded from the from SRA BioProject number [SRP254182](https://www.ncbi.nlm.nih.gov/Traces/study/?acc=SRP254182).
+The similar computational pipeline has been used to analyse the XACT-seq (2020) experiments. The raw fastq files can be downloaded from SRA BioProject number [SRP254182](https://www.ncbi.nlm.nih.gov/Traces/study/?acc=SRP254182).
 
 1. First, we performed the first step discribed in this repo to analyse the samples from XACT-seq (2020) experiments and get the featrue files for each sample and the template.
 2. Second, we rescaled the counts for all the samples from XACT-seq (2020) with template of XACT-seq (2020) called `CP26T`.
