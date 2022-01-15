@@ -16,7 +16,7 @@ Scripts provides in this directory were configured specifically for the Elzar cl
 ```
 
 - The core of the pipeline are located in `src` [directory](../01_step_fastq_to_feature/src). The content of this folder may not be modified, unless someone need to adopt submitting jobs to other clusters or need to add extra feature extraction.
-- The sequencing data (fastq) files from SRA BioProject number **XXXXXX** need to be downloaded and put in `fastq` [directory](../01_step_fastq_to_feature/fastq).
+- The sequencing data (fastq) files from SRA BioProject number [SRP355098](https://www.ncbi.nlm.nih.gov/Traces/study/?acc=SRP355098) need to be downloaded and put in `fastq` [directory](../01_step_fastq_to_feature/fastq).
     - Since the size of fastq data are huge, they are not provided in this repository.
 - The pipeline input files are located in `2022_xact_seq_pipeline` [directory](../01_step_fastq_to_feature/2022_xact_seq_pipeline). Contents of this folder are:
     - `metadata.xlsx`: This file includes several sheets which point towards each samples fastq file and uses regular expressions to extract the features we are interested from the sequence files.

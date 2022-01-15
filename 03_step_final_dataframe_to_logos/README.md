@@ -22,6 +22,6 @@ To reproduce the figures presented in this manuscript, execute the following iPy
 
 3. [`2022_XACT_seq_logos_figs.ipynb`](../03_step_final_dataframe_to_logos/2022_XACT_seq/2022_XACT_seq_logos_figs.ipynb):
     - Sequence logos and count profiles for the experiments conducted for the current manuscript.
-    - The corresponding data to produce the figures are in [2022_XACT_seq_data](../03_step_final_dataframe_to_logos/2022_XACT_seq/2022_XACT_seq_data). These data are produced by running our pipeline on the raw fastq files from the SRA BioProject number [******](https://www.ncbi.nlm.nih.gov/Traces/study/?acc=SRP254182) as explained in the [README](../02_step_feature_to_final_dataframes/README.md) file.
+    - The corresponding data to produce the figures are in [2022_XACT_seq_data](../03_step_final_dataframe_to_logos/2022_XACT_seq/2022_XACT_seq_data). These data are produced by running our pipeline on the raw fastq files from the SRA BioProject number [SRP355098](https://www.ncbi.nlm.nih.gov/Traces/study/?acc=SRP355098) as explained in the [README](../02_step_feature_to_final_dataframes/README.md) file.
 
     - The final figures are deposited in [2022_XACT_seq_figs](../03_step_final_dataframe_to_logos/2022_XACT_seq/2022_XACT_seq_figs).
