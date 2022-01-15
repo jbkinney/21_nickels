@@ -25,3 +25,4 @@ The third (final step) is used to plot sequence logos and count profiles present
 - The inputs of this steps are the `csv` files from Step 2 and outputs are the sequence logos and rescaled counts figures which some of them are presented in the manuscript.
 
 Please address technical questions about this repository and its contents to [Justin B. Kinney](mailto:jkinney@cshl.edu). More general scientific correspondence about this work should be sent to [Bryce Nickels](mailto:bnickels@waksman.rutgers.edu).
+The sequencing data (fastq) files from SRA BioProject number [SRP355098](https://www.ncbi.nlm.nih.gov/Traces/study/?acc=SRP355098).
