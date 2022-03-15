@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/445653194.svg)](https://zenodo.org/badge/latestdoi/445653194)
+
 # Analysis code and summary data
 
 **Structural and mechanistic basis of σ-dependent transcriptional pausing**
